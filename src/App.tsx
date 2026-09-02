@@ -1,10 +1,13 @@
 import { ActivityCard } from "./components/activity-card";
 import { Benefit } from "./components/benefit";
+import { Blog } from "./components/blog";
 import { Button } from "./components/button";
+import { FeaturedArticle } from "./components/featured-article";
 import { Heading } from "./components/heading";
 import { HotelCard } from "./components/hotel-card";
 import { ACTIVITIES } from "./data/activities.data";
 import { BENEFITS } from "./data/benefits.data";
+import { BLOG_ARTICLES } from "./data/blog.data";
 import { HOTELS } from "./data/hotels.data";
 
 function App() {
@@ -29,6 +32,12 @@ function App() {
       </div>
       <div className="flex flex-col gap-5">
         {HOTELS.map(hotel => <HotelCard key={hotel.id} hotel={hotel} />)}
+      </div>
+      <div className="flex flex-col gap-5">
+        {BLOG_ARTICLES.map(blog => <Blog key={blog.id} blog={blog} />)}
+      </div>
+      <div className="flex flex-col gap-5">
+        {BLOG_ARTICLES.map(article => <FeaturedArticle key={article.id} article={article} />)}
       </div>
     </div>
   );

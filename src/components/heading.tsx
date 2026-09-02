@@ -10,7 +10,7 @@ const heading = tv({
   base: 'font-bold',
   variants: {
     color: {
-      primary: 'secondary-text',
+      primary: 'text-secondary',
     },
     size: {
       display: 'text-[96px]',

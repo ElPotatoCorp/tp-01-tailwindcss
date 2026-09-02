@@ -10,10 +10,10 @@ function App() {
         <Button color="white" size="md" shape="pill">White</Button>
       </div>
       <div className="flex flex-col">
-        <Heading>Heading Display</Heading>
-        <Heading size="lg">Heading LG</Heading>
-        <Heading size="md">Heading MD</Heading>
-        <Heading size="sm">Heading SM</Heading>
+        <Heading as="h2">Heading Display</Heading>
+        <Heading as="h2" size="lg">Heading LG</Heading>
+        <Heading as="h2" size="md">Heading MD</Heading>
+        <Heading as="h2" size="sm">Heading SM</Heading>
       </div>
     </div>
   );

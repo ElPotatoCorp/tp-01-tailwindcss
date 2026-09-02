@@ -22,13 +22,13 @@ function App() {
         <Heading as="h2" size="sm">Heading SM</Heading>
       </div>
       <div className="flex flex-col gap-5">
-        {BENEFITS.map(benefit => <Benefit benefit={benefit} />)}
+        {BENEFITS.map((benefit, idx) => <Benefit key={idx} benefit={benefit} />)}
       </div>
       <div className="flex flex-col gap-5">
-        {ACTIVITIES.map(activity => <ActivityCard activity={activity} />)}
+        {ACTIVITIES.map(activity => <ActivityCard key={activity.id} activity={activity} />)}
       </div>
       <div className="flex flex-col gap-5">
-        {HOTELS.map(hotel => <HotelCard hotel={hotel} />)}
+        {HOTELS.map(hotel => <HotelCard key={hotel.id} hotel={hotel} />)}
       </div>
     </div>
   );

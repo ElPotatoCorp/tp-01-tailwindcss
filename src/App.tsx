@@ -1,6 +1,8 @@
+import { ActivityCard } from "./components/activity-card";
 import { Benefit } from "./components/benefit";
 import { Button } from "./components/button";
 import { Heading } from "./components/heading";
+import { ACTIVITIES } from "./data/activities.data";
 import { BENEFITS } from "./data/benefits.data";
 
 function App() {
@@ -19,6 +21,9 @@ function App() {
       </div>
       <div className="flex flex-col gap-5">
         {BENEFITS.map(benefit => <Benefit benefit={benefit} />)}
+      </div>
+      <div className="flex flex-col gap-5">
+        {ACTIVITIES.map(activity => <ActivityCard activity={activity} />)}
       </div>
     </div>
   );

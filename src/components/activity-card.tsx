@@ -1,3 +1,4 @@
+import { StarIcon } from "@phosphor-icons/react";
 import type { FC } from "react";
 import type { ActivityData } from "../data/activities.data";
 import { Chip } from "./chip";
@@ -20,7 +21,10 @@ export const ActivityCard: FC<Props> = function ({ activity }) {
 
         <div className="absolute inset-x-3 top-3 flex items-center justify-between">
           <Chip>{activity.duration}</Chip>
-          <Chip>&#8902; {activity.rating} ({activity.reviews})</Chip>
+          <Chip>
+            <StarIcon weight="fill" />
+            {activity.rating} ({activity.reviews})
+          </Chip>
         </div>
 
         <div className="absolute inset-x-3 bottom-1.5 flex flex-col gap-2 text-white">

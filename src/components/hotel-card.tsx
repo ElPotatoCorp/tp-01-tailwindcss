@@ -1,3 +1,4 @@
+import { StarIcon } from "@phosphor-icons/react";
 import type { FC } from "react";
 import type { HotelData } from "../data/hotels.data";
 
@@ -19,7 +20,8 @@ export const HotelCard: FC<Props> = function ({ hotel }) {
 
         <div className="absolute inset-x-3 bottom-3 flex flex-col text-white">
           <span className="text-sm font-medium">
-            &#8902; {hotel.rating} ({hotel.reviews})
+            <StarIcon weight="fill" />
+            {hotel.rating} ({hotel.reviews})
           </span>
 
           <h3 className="text-xl font-bold">{hotel.title}</h3>

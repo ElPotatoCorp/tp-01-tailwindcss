@@ -1,5 +1,7 @@
+import { Benefit } from "./components/benefit";
 import { Button } from "./components/button";
 import { Heading } from "./components/heading";
+import { BENEFITS } from "./data/benefits.data";
 
 function App() {
   return (
@@ -14,6 +16,9 @@ function App() {
         <Heading as="h2" size="lg">Heading LG</Heading>
         <Heading as="h2" size="md">Heading MD</Heading>
         <Heading as="h2" size="sm">Heading SM</Heading>
+      </div>
+      <div className="flex flex-col gap-5">
+        {BENEFITS.map(benefit => <Benefit benefit={benefit} />)}
       </div>
     </div>
   );

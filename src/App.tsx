@@ -2,8 +2,10 @@ import { ActivityCard } from "./components/activity-card";
 import { Benefit } from "./components/benefit";
 import { Button } from "./components/button";
 import { Heading } from "./components/heading";
+import { HotelCard } from "./components/hotel-card";
 import { ACTIVITIES } from "./data/activities.data";
 import { BENEFITS } from "./data/benefits.data";
+import { HOTELS } from "./data/hotels.data";
 
 function App() {
   return (
@@ -24,6 +26,9 @@ function App() {
       </div>
       <div className="flex flex-col gap-5">
         {ACTIVITIES.map(activity => <ActivityCard activity={activity} />)}
+      </div>
+      <div className="flex flex-col gap-5">
+        {HOTELS.map(hotel => <HotelCard hotel={hotel} />)}
       </div>
     </div>
   );

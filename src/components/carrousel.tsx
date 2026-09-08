@@ -53,7 +53,7 @@ export function Carrousel<T>(props: Props<T>) {
 
   return (<div>
 
-    <div className="cursor-grab active:cursor-grabbing" ref={emblaRef}>
+    <div className="cursor-grab active:cursor-grabbing overflow-hidden" ref={emblaRef}>
       <ul className="flex gap-6 select-none">
         {props.items.map((value) => props.render(value))}
       </ul>

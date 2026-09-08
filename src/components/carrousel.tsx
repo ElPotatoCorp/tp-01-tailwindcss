@@ -78,8 +78,8 @@ export function Carrousel<T>(props: Props<T>) {
             key={index}
             onClick={() => scrollTo(index)}
             className={`h-2.5 rounded-full transition-all duration-300 ${index === selectedIndex
-              ? 'w-8 bg-primary-text'
-              : 'w-2.5 bg-secondary-text/50 hover:bg-secondary-text'
+              ? 'w-8 bg-primary'
+              : 'w-2.5 bg-secondary/50 hover:bg-secondary'
               }`}
             aria-label={`Aller au slide ${index + 1}`}
           />

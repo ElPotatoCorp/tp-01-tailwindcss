@@ -1,7 +1,7 @@
 
 function App() {
   return (
-    <div className="font-sans mx-auto">
+    <div className="debug font-sans mx-auto">
       <header>
         {/* <Menu /> */}
         {/* <Hero /> */}

@@ -6,10 +6,17 @@ type Props = VariantProps<typeof button> & DetailedHTMLProps<ButtonHTMLAttribute
 const button = tv({
   base: 'font-semibold tracking-wide disabled:opacity-50 cursor-pointer active:scale-105 hover:scale-110 transition-all duration-300',
   variants: {
-    color: {
-      primary: 'primary-text',
-      white: 'bg-white',
+    textColor: {
+      primary: 'text-primary',
+      secondary: 'text-secondary',
+      white: 'text-white',
+      black: 'text-black',
+    },
+    bgColor: {
+      none: '',
+      primary: 'bg-primary',
       secondary: 'bg-secondary',
+      softGrey: 'bg-gray-200/30',
     },
     size: {
       sm: 'py-3 px-6 rounded-xl',
@@ -21,7 +28,8 @@ const button = tv({
     }
   },
   defaultVariants: {
-    color: 'primary',
+    textColor: 'primary',
+    bgColor: 'softGrey',
     size: 'md',
     shape: 'rounded'
   }

@@ -1,3 +1,4 @@
+import { Benefits } from "./components/sections/benefits";
 import { Hero } from "./components/sections/hero";
 import { Menu } from "./components/sections/menu";
 
@@ -9,8 +10,8 @@ function App() {
         <Hero />
       </header>
 
-      <main className="container mx-auto px-6">
-        {/* <Benefits /> */}
+      <main className="container my-10 mx-auto px-6">
+        <Benefits />
         {/* <Tours /> */}
         {/* <Hotels /> */}
         {/* <Blog /> */}

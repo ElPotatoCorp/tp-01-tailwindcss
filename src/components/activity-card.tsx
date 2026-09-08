@@ -9,7 +9,7 @@ type Props = {
 
 export const ActivityCard: FC<Props> = function ({ activity }) {
   return (
-    <div className="flex w-75 flex-col overflow-hidden rounded-2xl bg-white">
+    <div className="flex flex-col w-75 shrink-0 overflow-hidden rounded-2xl bg-white">
       <div className="relative aspect-card w-full">
         <img
           src={activity.cover}

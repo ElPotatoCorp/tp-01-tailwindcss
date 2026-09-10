@@ -7,7 +7,7 @@ type Props = {
 
 export const Blog: FC<Props> = function ({ blog }) {
   return (
-    <div className="flex w-75 flex-col overflow-hidden rounded-2xl bg-white">
+    <div className="flex w-full flex-col overflow-hidden rounded-2xl bg-white">
       <div className="relative aspect-card w-full group">
         <img
           src={blog.cover}

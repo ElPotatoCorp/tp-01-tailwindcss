@@ -1,4 +1,5 @@
 import { Benefits } from "./components/sections/benefits";
+import { Blog } from "./components/sections/blog";
 import { Hero } from "./components/sections/hero";
 import { Hotels } from "./components/sections/hotels";
 import { Menu } from "./components/sections/menu";
@@ -6,7 +7,7 @@ import { Tours } from "./components/sections/tours";
 
 function App() {
   return (
-    <div className="debug font-sans mx-auto">
+    <div className="font-sans mx-auto">
       <header className="flex flex-col justify-center" >
         <Menu />
         <Hero />
@@ -16,7 +17,7 @@ function App() {
         <Benefits />
         <Tours />
         <Hotels />
-        {/* <Blog /> */}
+        <Blog />
       </main>
 
       {/* <Footer /> */}

@@ -1,5 +1,6 @@
 import { Benefits } from "./components/sections/benefits";
 import { Hero } from "./components/sections/hero";
+import { Hotels } from "./components/sections/hotels";
 import { Menu } from "./components/sections/menu";
 import { Tours } from "./components/sections/tours";
 
@@ -14,7 +15,7 @@ function App() {
       <main className="container flex flex-col gap-5 my-10 mx-auto px-6">
         <Benefits />
         <Tours />
-        {/* <Hotels /> */}
+        <Hotels />
         {/* <Blog /> */}
       </main>
 

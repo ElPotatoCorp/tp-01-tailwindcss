@@ -8,7 +8,7 @@ type Props = {
 
 export const HotelCard: FC<Props> = function ({ hotel }) {
   return (
-    <div className="flex w-75 flex-col overflow-hidden rounded-2xl bg-white">
+    <div className="flex flex-col w-100 shrink-0 overflow-hidden rounded-2xl bg-white">
       <div className="relative aspect-card w-full">
         <img
           src={hotel.cover}
@@ -19,7 +19,7 @@ export const HotelCard: FC<Props> = function ({ hotel }) {
         <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/10 to-transparent" />
 
         <div className="absolute inset-x-3 bottom-3 flex flex-col text-white">
-          <span className="text-sm font-medium">
+          <span className="flex flex-row gap-1 items-center text-sm font-medium">
             <StarIcon weight="fill" />
             {hotel.rating} ({hotel.reviews})
           </span>

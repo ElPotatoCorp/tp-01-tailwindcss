@@ -14,7 +14,7 @@ export const Tours: FC = function () {
     , [filter])
 
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 my-section">
       <div className="flex flex-row justify-between">
         <span className="text-5xl font-semibold">Composez votre voyage</span>
         <div className="flex flex-row gap-5">

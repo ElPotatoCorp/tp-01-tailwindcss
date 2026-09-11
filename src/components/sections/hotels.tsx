@@ -5,7 +5,7 @@ import { HotelCard } from "../hotel-card";
 
 export const Hotels: FC = function () {
   return (
-    <div className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6 my-section">
       <span className="self-center text-5xl font-semibold">Établissez votre camp de base</span>
 
       <Carrousel items={HOTELS} render={hotel => <HotelCard hotel={hotel} />} />

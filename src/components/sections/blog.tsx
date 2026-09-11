@@ -5,7 +5,7 @@ import { FeaturedArticle } from "../featured-article";
 
 export const Blog: FC = function () {
   return (
-    <div className="flex flex-col gap-6 w-[72%]">
+    <div className="flex flex-col gap-6 w-[72%] my-section">
       <span className="text-5xl font-semibold">Nos dernières Astuces</span>
 
       <div className="flex flex-row gap-6">

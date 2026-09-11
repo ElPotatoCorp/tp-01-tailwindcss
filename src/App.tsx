@@ -1,5 +1,6 @@
 import { Benefits } from "./components/sections/benefits";
 import { Blog } from "./components/sections/blog";
+import { Footer } from "./components/sections/footer";
 import { Hero } from "./components/sections/hero";
 import { Hotels } from "./components/sections/hotels";
 import { Menu } from "./components/sections/menu";
@@ -20,7 +21,7 @@ function App() {
         <Blog />
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

@@ -16,11 +16,13 @@ const button = tv({
       none: '',
       primary: 'bg-primary',
       secondary: 'bg-secondary',
+      white: 'bg-white',
       softGrey: 'bg-gray-200/30',
     },
     size: {
       sm: 'py-3 px-6 rounded-xl',
-      md: 'lg: py-4 px-8 rounded-2xl text-lg',
+      md: 'py-4 px-7 rounded-xl text-md',
+      lg: 'py-4 px-8 rounded-2xl text-lg'
     },
     shape: {
       pill: 'rounded-full!',

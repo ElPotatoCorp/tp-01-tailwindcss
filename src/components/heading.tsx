@@ -26,11 +26,16 @@ const heading = tv({
       medium: 'font-medium',
       normal: 'font-normal',
     },
+    uppercase: {
+      true: 'uppercase',
+      false: '',
+    },
   },
   defaultVariants: {
     color: 'primary',
     size: 'display',
     weight: 'bold',
+    uppercase: false
   },
 });
 

@@ -12,13 +12,13 @@ export const Footer: FC = function () {
         </div>
         <div className="flex self-center gap-7">
           <Button className="px-8" textColor="primary" bgColor="white" shape="pill" size="sm">
-            <FacebookLogoIcon size={32} />
+            <FacebookLogoIcon weight="bold" size={32} />
           </Button>
           <Button className="px-8" textColor="primary" bgColor="white" shape="pill" size="sm">
-            <TwitterLogoIcon size={32} />
+            <TwitterLogoIcon weight="bold" size={32} />
           </Button>
           <Button className="px-8" textColor="primary" bgColor="white" shape="pill" size="sm">
-            <YoutubeLogoIcon size={32} />
+            <YoutubeLogoIcon weight="bold" size={32} />
           </Button>
         </div>
       </div>

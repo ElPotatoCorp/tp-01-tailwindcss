@@ -12,8 +12,23 @@
 }
 
 @utility my-section {
-  margin-top: calc(var(--spacing) * 42);
-  margin-bottom: calc(var(--spacing) * 42);
+  margin-top: --spacing(8);
+  margin-bottom: --spacing(8);
+
+  @variant sm {
+    margin-top: --spacing(15);
+    margin-bottom: --spacing(15);
+  }
+
+  @variant md {
+    margin-top: --spacing(30);
+    margin-bottom: --spacing(30);
+  }
+
+  @variant lg {
+    margin-top: --spacing(40);
+    margin-bottom: --spacing(40);
+  }
 }
 
 .debug * {

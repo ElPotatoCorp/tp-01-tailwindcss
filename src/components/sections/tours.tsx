@@ -3,6 +3,7 @@ import { ACTIVITIES } from "../../data/activities.data";
 import { ActivityCard } from "../activity-card";
 import { Button } from "../button";
 import { Carrousel } from "../carrousel";
+import { Heading } from "../heading";
 
 export const Tours: FC = function () {
   const [filter, setFilter] = useState<'experience' | 'hike' | 'all'>('all');
@@ -16,8 +17,8 @@ export const Tours: FC = function () {
   return (
     <div className="flex flex-col gap-6 my-section">
       <div className="flex flex-row justify-between">
-        <span className="text-5xl font-semibold">Composez votre voyage</span>
-        <div className="flex flex-row gap-5">
+        <Heading as="h2" size="lg">Composez votre voyage</Heading>
+        <div className="flex flex-row gap-5 my-2">
           <Button
             textColor={filter === 'all' ? 'white' : 'primary'}
             bgColor={filter === 'all' ? 'primary' : 'softGrey'}

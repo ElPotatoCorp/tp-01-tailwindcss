@@ -1,4 +1,5 @@
 import type { FC } from "react";
+import { Heading } from "../heading";
 
 export const Hero: FC = function () {
   return (
@@ -11,10 +12,10 @@ export const Hero: FC = function () {
         />
 
         <div className="absolute inset-10 flex flex-col justify-between">
-          <div className="flex flex-col text-primary">
-            <span className="text-xl uppercase">BIENVENUE AUX</span>
-            <span className="text-8xl font-black uppercase">AÇORES</span>
-            <span className="font-medium">Joyau de verdure perdu dans l'Atlantique</span>
+          <div className="flex flex-col text-primary leading-tight">
+            <Heading as="span" size="sm" weight="normal" uppercase>Bienvenue aux</Heading>
+            <Heading as="h1" uppercase>Açores</Heading>
+            <Heading as="span" size="sm" weight="medium">Joyau de verdure perdu dans l'Atlantique</Heading>
           </div>
           <button className="self-start text-emerald-700 bg-white rounded-xl px-8 py-3 text-center font-semibold">
             Réserver

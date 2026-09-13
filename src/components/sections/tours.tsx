@@ -16,10 +16,14 @@ export const Tours: FC = function () {
 
   return (
     <div id="activites" className="flex flex-col gap-6 my-section">
-      <div className="flex flex-row justify-between">
-        <Heading as="h2" size="lg">Composez votre voyage</Heading>
-        <div className="flex flex-row gap-5 my-2">
+      <div className="flex flex-col md:flex-row items-center md:justify-between gap-4">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <Heading as="h2" size="lg">Composez votre voyage</Heading>
+        </div>
+        {/* Je sais pas pourquoi `-mx-3` ne marche pas pour cancel la margin de base... :/ */}
+        <div className="flex flex-row gap-4 py-2 md:px-0 w-full sm:w-auto overflow-x-auto overflow-y-hidden scrollbar-none sm:scrollbar-auto">
           <Button
+            className="shrink-0"
             textColor={filter === 'all' ? 'white' : 'primary'}
             bgColor={filter === 'all' ? 'primary' : 'softGrey'}
             shape="pill"
@@ -28,6 +32,7 @@ export const Tours: FC = function () {
             Tout
           </Button>
           <Button
+            className="shrink-0"
             textColor={filter === 'experience' ? 'white' : 'primary'}
             bgColor={filter === 'experience' ? 'primary' : 'softGrey'}
             shape="pill"
@@ -36,6 +41,7 @@ export const Tours: FC = function () {
             Expériences
           </Button>
           <Button
+            className="shrink-0"
             textColor={filter === 'hike' ? 'white' : 'primary'}
             bgColor={filter === 'hike' ? 'primary' : 'softGrey'}
             shape="pill"

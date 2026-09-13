@@ -6,7 +6,7 @@ import { Heading } from "../heading";
 
 export const Blog: FC = function () {
   return (
-    <div className="flex flex-col gap-6 my-section">
+    <div className="flex flex-col gap-6 my-section text-center md:text-start">
       <Heading as="h2" size="lg">Nos dernières Astuces</Heading>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">

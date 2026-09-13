@@ -14,7 +14,7 @@ function App() {
         <Hero />
       </header>
 
-      <main className="container flex flex-col gap-5 mx-3 my-4 sm:my-10 sm:px-6">
+      <main className="container flex flex-col gap-5 mx-auto my-4 sm:my-10 sm:px-6">
         <Benefits />
         <Tours />
         <Hotels />

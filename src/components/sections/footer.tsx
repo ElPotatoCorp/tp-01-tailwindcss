@@ -6,7 +6,7 @@ import { Heading } from "../heading";
 export const Footer: FC = function () {
   return (
     <footer className="py-10 bg-primary">
-      <div className="flex flex-row justify-between px-15 py-10 bg-secondary/7">
+      <div className="flex flex-col sm:flex-row gap-7 sm:gap-0 text-center sm:text-start sm:justify-between sm:px-15 pt-3 pb-6 sm:py-10 bg-secondary/7">
         <div className="flex flex-col text-white">
           <Heading as="h2" color="white" size="lg">Açores</Heading>
           <Heading as="span" color="white" size="sm" weight="medium">Joyau perdu dans l'Atlantique</Heading>

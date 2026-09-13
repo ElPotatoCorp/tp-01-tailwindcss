@@ -1,0 +1,12 @@
+# Pointe vers un fichier à la racine du répertoire du rendu.
+# Si ce fichier n'existe pas, une erreur est générée.
+root: package.json
+
+# Fichiers à inclure dans le rendu (motifs façon .gitignore)
+include:
+  - package.json
+  - index.html
+  - src/
+
+exclude: 
+  - public/

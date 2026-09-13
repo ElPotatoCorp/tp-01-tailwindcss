@@ -11,7 +11,7 @@ export const Benefits: FC = function () {
         <Heading as="span" size="sm" color="secondary" weight="medium">Accédez à une large gamme de services compris dans votre séjour</Heading>
       </div>
 
-      <div className="flex flex-row justify-evenly">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
         {BENEFITS.map((benefit, idx) => <Benefit key={idx} benefit={benefit} />)}
       </div>
     </div>

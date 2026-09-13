@@ -5,7 +5,7 @@ import type { BenefitData } from "../data/benefits.data";
 
 const benefit = tv({
   slots: {
-    container: "flex flex-col items-center gap-2 rounded-2xl text-center",
+    container: "flex flex-col items-center gap-2 rounded-2xl text-center justify-self-center",
     icon: "rounded-2xl bg-gray-200 p-2",
     label: "font-bold leading-tight",
     description: "font-medium leading-relaxed text-black-300",

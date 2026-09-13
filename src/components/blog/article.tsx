@@ -7,9 +7,13 @@ type Props = {
 
 export const Article: FC<Props> = function ({ article }) {
   return (
-    <div className="flex flex-row gap-3 w-150">
-      <img className="max-w-40 w-full max-h-40 h-full rounded-3xl" src={article.cover} />
-      <div className="flex flex-col justify-center w-75">
+    <div className="flex flex-col md:flex-row gap-3 w-full">
+      <img
+        src={article.cover}
+        alt={article.title}
+        className="w-full aspect-video rounded-3xl object-cover md:w-40 md:max-w-40 md:aspect-square md:shrink-0"
+      />
+      <div className="flex flex-col justify-center gap-1 min-w-0">
         <p className="text-sm text-secondary font-medium">
           {article.date.toLocaleDateString('fr-fr')}
         </p>

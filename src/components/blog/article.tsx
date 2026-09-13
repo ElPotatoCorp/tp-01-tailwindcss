@@ -1,11 +1,11 @@
 import type { FC } from "react";
-import type { BlogData } from "../data/blog.data";
+import type { BlogData } from "../../data/blog.data";
 
 type Props = {
   article: BlogData;
 };
 
-export const FeaturedArticle: FC<Props> = function ({ article }) {
+export const Article: FC<Props> = function ({ article }) {
   return (
     <div className="flex flex-row gap-3 w-150">
       <img className="max-w-40 w-full max-h-40 h-full rounded-3xl" src={article.cover} />

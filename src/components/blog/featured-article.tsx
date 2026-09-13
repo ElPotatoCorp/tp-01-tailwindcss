@@ -1,29 +1,29 @@
 import type { FC } from "react";
-import type { BlogData } from "../data/blog.data";
+import type { BlogData } from "../../data/blog.data";
 
 type Props = {
-  blog: BlogData;
+  article: BlogData;
 };
 
-export const Blog: FC<Props> = function ({ blog }) {
+export const FeaturedArticle: FC<Props> = function ({ article }) {
   return (
     <div className="flex w-full flex-col overflow-hidden rounded-2xl bg-white">
       <div className="relative aspect-card w-full group">
         <img
-          src={blog.cover}
-          alt={blog.title}
+          src={article.cover}
+          alt={article.title}
           className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-500"
         />
 
         <div className="absolute inset-0 p-8 text-xl text-justify text-transparent group-hover:text-white font-semibold bg-linear-to-t from-black/65 via-black/10 to-transparent  hover:bg-black/65 transition-colors content-center">
-          {blog.excerpt}
+          {article.excerpt}
         </div>
 
         <div className="absolute inset-x-3 bottom-3 flex flex-col text-white group-hover:translate-y-32 transition-transform duration-500">
           <span className="text-sm font-medium">
-            {blog.date.toLocaleDateString('fr-fr')}
+            {article.date.toLocaleDateString('fr-fr')}
           </span>
-          <h3 className="text-xl font-bold">{blog.title}</h3>
+          <h3 className="text-xl font-bold">{article.title}</h3>
         </div>
       </div>
     </div>

@@ -17,8 +17,8 @@ const heading = tv({
     size: {
       display: 'text-[64px] md:text-[96px]',
       lg: 'text-[32px] md:text-[48px]',
-      md: 'text-[16px] md:text-[30px]',
-      sm: 'text-[8px] md:text-[20px] font-semibold',
+      md: 'text-[20px] md:text-[30px]',
+      sm: 'text-[12px] md:text-[20px] font-semibold',
     },
     weight: {
       bold: 'font-bold',

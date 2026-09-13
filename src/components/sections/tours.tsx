@@ -46,7 +46,7 @@ export const Tours: FC = function () {
         </div>
       </div>
 
-      <Carrousel items={activities} render={activity => <ActivityCard activity={activity} />} />
+      <Carrousel items={activities} render={activity => <ActivityCard key={activity.id} activity={activity} />} />
     </div>
   );
 };

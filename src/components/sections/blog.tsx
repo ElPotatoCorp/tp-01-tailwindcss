@@ -12,7 +12,7 @@ export const Blog: FC = function () {
       <div className="flex flex-row gap-6">
         <BlogComponent blog={BLOG_ARTICLES[0]} />
         <div className="flex flex-col justify-between">
-          {BLOG_ARTICLES.map((blog, idx) => idx != 0 ? <FeaturedArticle article={blog} /> : null)}
+          {BLOG_ARTICLES.map((blog, idx) => idx != 0 ? <FeaturedArticle key={idx} article={blog} /> : null)}
         </div>
       </div>
     </div>

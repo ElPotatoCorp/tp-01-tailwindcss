@@ -11,7 +11,7 @@ export const Hotels: FC = function () {
         <Heading as="h2" size="lg">Établissez votre camp de base</Heading>
       </div>
 
-      <Carrousel items={HOTELS} render={hotel => <HotelCard hotel={hotel} />} />
+      <Carrousel items={HOTELS} render={hotel => <HotelCard key={hotel.id} hotel={hotel} />} />
     </div>
   );
 };

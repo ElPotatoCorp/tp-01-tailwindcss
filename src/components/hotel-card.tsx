@@ -8,7 +8,7 @@ type Props = {
 
 export const HotelCard: FC<Props> = function ({ hotel }) {
   return (
-    <div className="flex flex-col w-[75%] min-w-50 max-w-100 shrink-0 overflow-hidden rounded-2xl bg-white">
+    <div className="flex flex-col w-[75%] min-w-60 max-w-100 shrink-0 overflow-hidden rounded-2xl bg-white">
       <div className="relative aspect-card w-full">
         <img
           src={hotel.cover}

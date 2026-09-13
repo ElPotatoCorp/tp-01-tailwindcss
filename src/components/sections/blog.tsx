@@ -6,13 +6,14 @@ import { Heading } from "../heading";
 
 export const Blog: FC = function () {
   return (
-    <div className="flex flex-col gap-6 w-[72%] my-section">
+    <div className="flex flex-col gap-6 my-section">
       <Heading as="h2" size="lg">Nos dernières Astuces</Heading>
 
-      <div className="flex flex-row gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
         <BlogComponent blog={BLOG_ARTICLES[0]} />
-        <div className="flex flex-col justify-between">
-          {BLOG_ARTICLES.map((blog, idx) => idx != 0 ? <FeaturedArticle key={idx} article={blog} /> : null)}
+
+        <div className="flex flex-col gap-6 h-full justify-between">
+          {BLOG_ARTICLES.map((article, idx) => idx !== 0 ? <FeaturedArticle key={idx} article={article} /> : null)}
         </div>
       </div>
     </div>

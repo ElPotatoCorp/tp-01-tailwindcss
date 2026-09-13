@@ -8,7 +8,7 @@ import { Tours } from "./components/sections/tours";
 
 function App() {
   return (
-    <div className="font-sans mx-aut overflow-scroll">
+    <div className="font-sans mx-auto">
       <header className="flex flex-col justify-center" >
         <Menu />
         <Hero />
